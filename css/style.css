@@ -103,7 +103,7 @@ header {
     border: 1px solid white;
     border-radius: 8px;
     box-shadow: 0 20px 10px #000000;
-    max-width: 280px;
+    max-width: 320px;
     background-color: #0000007f;
     
 }
@@ -141,7 +141,7 @@ header {
 }
 
 .card {
-    max-width: 280px;
+    max-width: 300px;
     border: 1px solid #124fa1;
     border-radius: 8px;
     overflow: hidden;
@@ -201,7 +201,7 @@ header {
     border: 1px solid white;
     border-radius: 8px;
     box-shadow: 0 20px 10px #000000;
-    max-width: 280px;
+    max-width: 400px;
     background-color: #000000;
     
 
@@ -212,21 +212,23 @@ header {
     width: 100%;
     height: 400px;
 }
-.carta-youtube h1{
+.carta-youtube h2{
     color: white;
 }
 
 @media screen and (max-width: 1024px) {
     .main-videos {
         display: grid;
-        grid-template-columns: 3fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
-    }
+    
+    
+}
     @media screen and (max-width: 768px) {
         .main-videos {
             display: grid;
             grid-template-columns: 3fr;
-            justify-content: space-between;
             justify-items: center;
         }
 

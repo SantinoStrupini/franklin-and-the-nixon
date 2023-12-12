@@ -1,0 +1,49 @@
+/*header*/
+@media screen and (max-width: 991px) {
+    header{
+        nav{
+            div{
+                .menu{
+                    position: absolute;
+                    top: 50px;
+                    left: 0px;
+                    padding-left: 12px;
+                    z-index: 2;
+                    width: 100vw;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+/*musica*/
+@media screen and (max-width: 1024px) {
+    .main-musica {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        justify-items: center;
+    }
+}   
+
+/*sobre-nosotros*/
+@media screen and (max-width: 1024px) {
+    .main-sobrenosotros {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr ;
+        justify-content: space-between;
+        justify-items: center;
+    }
+}
+
+/*videos*/
+@media screen and (max-width: 1024px) {
+    .main-videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    
+    
+}

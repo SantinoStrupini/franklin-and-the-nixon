@@ -1,0 +1,62 @@
+/*index*/
+@media  (max-width: 1024px){
+    main{
+        .carousel{
+            display: none;
+        }
+        section{
+            .img-index-responsive{
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        .imagenes{
+            display: none;
+        }
+    }
+}
+
+/*musica*/
+@media screen and (max-width: 768px) {
+    .main-musica {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+}
+
+/*sobre-nosotros*/
+@media screen and (max-width: 768px) {
+    .main-sobrenosotros {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+}
+
+/*videos*/
+@media screen and (max-width: 768px) {
+    .main-videos {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-items: center;
+    }
+
+}
+
+/*footer*/
+@media screen and (max-width: 400px) {
+    .redes-icon4 {
+        display: none;
+    }
+}
+

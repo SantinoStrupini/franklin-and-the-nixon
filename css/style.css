@@ -1,364 +1,289 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: fuente;
-    src: url(../assets/fonts/fuente.zip);
+  font-family: fuente;
+  src: url(../assets/fonts/fuente.zip);
 }
-
 body {
-    font-family: fuente;
-    font-size: 16px;
-}
-
-/* Header */
-.logo {
-    width: 110px;
-    height: 55px;
-    position: absolute;
-    left: 10px;
-}
-
-
-.menu {
-    flex-grow: 0;
-    background-color: #000000;
-
-}
-
-.navbar-nav .nav-link.active {
-    color: white;
-}
-
-.nav-link {
-    color: white;
+  font-family: fuente;
+  font-size: 16px;
 }
 
 header {
-    background-color: #000000;
-    margin-bottom: 0px;
+  background-color: #000000;
+  margin-bottom: 0px;
+}
+header .bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
+header nav div .logo {
+  width: 110px;
+  height: 55px;
+  position: absolute;
+  left: 10px;
+}
+header nav div .menu {
+  flex-grow: 0;
+  background-color: #000000;
+}
+header nav div .navbar-toggler {
+  background-color: white;
+}
+header nav div div .navbar-nav .nav-link.active {
+  color: white;
+}
+header nav div div ul li .nav-link {
+  color: white;
 }
 
-.bg-body-tertiary {
-    --bs-bg-opacity: 0;
-}
-
-.navbar-toggler {
-    background-color: white;
-}
-
-@media screen and (max-width: 991px) {
-    .menu {
-        position: absolute;
-        top: 50px;
-        left: 0px;
-        padding-left: 12px;
-        z-index: 2;
-        width: 100vw;
-        opacity: 0.7;
-    }
-
-}
-
-
-
-/* Main Index */
-
-
-
-@media (max-width: 1024px) {
-    
-    .carousel {
-      display: none;
-    }
-    .img-index-responsive{
-        width: 100%;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .imagenes{
-        display: none;
-    }
-  }
-
-
-
-
-/* Main Musica*/
 .main-musica {
-    background-color: #242629;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-   
+  background-color: #242629;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-.carta-spotify {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 8px;
-    box-shadow: 0 20px 10px #000000;
-    max-width: 320px;
-    background-color: #0000007f;
-    
+.main-musica div iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
 }
-
-.carta-spotify iframe {
-    border: none;
-    width: 100%;
-    height: 400px;
-}
-
-@media screen and (max-width: 1024px) {
-    .main-musica {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
-        justify-items: center;
-    }
-    }
-    @media screen and (max-width: 768px) {
-        .main-musica {
-            display: grid;
-            grid-template-columns: 3fr;
-            justify-content: space-between;
-            justify-items: center;
-        }
-
-    }
-/*Main Sobre Nosotros*/
 
 .main-sobrenosotros {
-    background-color: #242629;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+  background-color: #242629;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.main-sobrenosotros div img {
+  width: 100%;
+  height: auto;
+}
+.main-sobrenosotros div div p {
+  padding: 5px;
 }
 
-.card {
-    max-width: 300px;
-    border: 1px solid #124fa1;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px #000000;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-    background-color: #ffffff2a;
-    color: white;
-
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card div p {
-    padding: 5px;
-
-}
-
-
-@media screen and (max-width: 1024px) {
-    .main-sobrenosotros {
-        display: grid;
-        grid-template-columns: 3fr 3fr 3fr ;
-        justify-content: space-between;
-        justify-items: center;
-    }
-    }
-
-    @media screen and (max-width: 768px) {
-        .main-sobrenosotros {
-            display: grid;
-            grid-template-columns: 3fr;
-            justify-content: space-between;
-            justify-items: center;
-        }
-
-    }
-
-/* Main Videos*/
 .main-videos {
-    background-color: #242629;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-
+  background-color: #242629;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-videos div iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+}
+.main-videos div h2 {
+  color: white;
 }
 
-.carta-youtube {
-    margin: 40px;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 8px;
-    box-shadow: 0 20px 10px #000000;
-    max-width: 400px;
-    background-color: #000000;
-    
-
+.main-contacto {
+  background-color: #242629;
+}
+.main-contacto section .contenedor {
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 2%;
+  justify-items: start;
+  padding: 20px;
+}
+.main-contacto section div .formulario {
+  border: white;
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 5px;
 }
 
-.carta-youtube iframe {
-    border: none;
-    width: 100%;
-    height: 400px;
+footer section .footer {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 1fr;
+  grid-template-rows: 100px;
+  align-items: end;
 }
-.carta-youtube h2{
-    color: white;
+footer section div .redes-icon {
+  padding: 10px;
+  background-image: url(../assets/img/logo-spotify.png.png);
+  background-size: 80px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 20px;
+  border-radius: 150px;
+  opacity: 80%;
+}
+footer section div .redes-icon:hover {
+  width: 110px;
+  height: 110px;
+}
+footer section div .redes-icon2 {
+  background-image: url(../assets/img/logo-instagram.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 20px;
+  border-radius: 150px;
+  opacity: 80%;
+}
+footer section div .redes-icon2:hover {
+  width: 110px;
+  height: 110px;
+}
+footer section div .redes-icon3 {
+  background-image: url(../assets/img/logo-tiktok.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 20px;
+  border-radius: 150px;
+  opacity: 80%;
+}
+footer section div .redes-icon3:hover {
+  width: 110px;
+  height: 110px;
+}
+footer section div .redes-icon4 {
+  background-image: url(../assets/img/logo-yt.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 20px;
+  border-radius: 150px;
+  opacity: 80%;
+}
+footer section div .redes-icon4:hover {
+  width: 110px;
+  height: 110px;
 }
 
+main .carta-spotify {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 20px 10px #000000;
+  max-width: 320px;
+  background-color: rgba(0, 0, 0, 0.4980392157);
+}
+main .card {
+  max-width: 300px;
+  border: 1px solid #124fa1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #000000;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1647058824);
+  color: white;
+}
+main .carta-youtube {
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 20px 10px #000000;
+  max-width: 400px;
+  background-color: #000000;
+}
+
+/*header*/
+@media screen and (max-width: 991px) {
+  header nav div .menu {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding-left: 12px;
+    z-index: 2;
+    width: 100vw;
+    opacity: 0.7;
+  }
+}
+/*musica*/
 @media screen and (max-width: 1024px) {
-    .main-videos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
-    
-    
+  .main-musica {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
 }
-    @media screen and (max-width: 768px) {
-        .main-videos {
-            display: grid;
-            grid-template-columns: 3fr;
-            justify-items: center;
-        }
+/*sobre-nosotros*/
+@media screen and (max-width: 1024px) {
+  .main-sobrenosotros {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
+}
+/*videos*/
+@media screen and (max-width: 1024px) {
+  .main-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+/*index*/
+@media (max-width: 1024px) {
+  main .carousel {
+    display: none;
+  }
+  main section .img-index-responsive {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  main .imagenes {
+    display: none;
+  }
+}
+/*musica*/
+@media screen and (max-width: 768px) {
+  .main-musica {
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
+}
+/*sobre-nosotros*/
+@media screen and (max-width: 768px) {
+  .main-sobrenosotros {
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
+}
+/*videos*/
+@media screen and (max-width: 768px) {
+  .main-videos {
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-items: center;
+  }
+}
+/*footer*/
+@media screen and (max-width: 400px) {
+  .redes-icon4 {
+    display: none;
+  }
+}
 
-    }
-
-
-    /*Main Contacto*/
-    .main-contacto {
-        background-color: #242629;
-    }
-
-    .main-contacto section .contenedor {
-        color: white;
-        display: grid;
-        grid-template-columns: 2fr;
-        gap: 2%;
-        justify-items: start;
-        padding: 20px;
-        
-    }
-
-    .formulario{
-        border: white;
-        border-radius:2px;
-        overflow: hidden;
-        padding: 5px;
-        
-    }
-
-    
-
-    /* footer */
-
-
-    .footer {
-        background-color: #000000;
-
-        display: grid;
-        grid-template-columns: 5fr 5fr 5fr 1fr;
-        grid-template-rows: 100px;
-        align-items: end;
-
-
-    }
-
-    .redes-icon {
-        padding: 10px;
-        background-image: url(../assets/img/logo-spotify.png.png);
-        background-size: 80px;
-        
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 20px;
-        border-radius: 150px;
-        opacity: 80%;
-    }
-
-    .redes-icon2 {
-        background-image: url(../assets/img/logo-instagram.png);
-        background-size: 60px;
-        background-repeat: no-repeat;
-
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 20px;
-        border-radius: 150px;
-        opacity: 80%;
-
-    }
-
-    .redes-icon3 {
-        background-image: url(../assets/img/logo-tiktok.png);
-        background-size: 35px;
-        background-repeat: no-repeat;
-
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 20px;
-        border-radius: 150px;
-        opacity: 80%;
-
-    }
-
-    .redes-icon4 {
-        background-image: url(../assets/img/logo-yt.png);
-        background-size: 80px;
-        background-repeat: no-repeat;
-
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-position: center;
-        right: 20px;
-        border-radius: 150px;
-        opacity: 80%;
-    }
-
-    .redes-icon:hover {
-        width: 110px;
-        height: 110px;
-
-    }
-
-    .redes-icon2:hover {
-        width: 110px;
-        height: 110px;
-
-    }
-
-    .redes-icon3:hover {
-        width: 110px;
-        height: 110px;
-
-    }
-
-    .redes-icon4:hover {
-        width: 110px;
-        height: 110px;
-
-    }
-
-    @media screen and (max-width: 400px) {
-        .redes-icon4 {
-            display: none;
-        }
-        }
-        
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+
+
+header{
+    background-color:#000000 ;
+    margin-bottom: 0px;
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+    }
+    nav{
+        div{
+            .logo {
+                width: 110px;
+                height: 55px;
+                position: absolute;
+                left: 10px;
+            }
+            .menu{
+                flex-grow: 0;
+                background-color: #000000;
+                
+            }
+            
+            .navbar-toggler{
+                background-color: white;
+                
+            }
+            div{
+                
+                .navbar-nav .nav-link.active{
+                    color: white;
+                }
+                ul{
+                    li{
+                        .nav-link{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  

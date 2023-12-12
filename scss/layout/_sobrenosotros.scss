@@ -1,0 +1,18 @@
+.main-sobrenosotros{
+    background-color: #242629;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    div{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        div{
+            p{
+                padding: 5px;
+            }
+        }
+    }
+}

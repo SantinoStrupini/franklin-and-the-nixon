@@ -1,0 +1,14 @@
+.main-musica{
+    background-color: #242629;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+   
+    div{
+        iframe{
+            border: none;
+            width: 100%;
+            height: 400px;
+        }
+    }
+}

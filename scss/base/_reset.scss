@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente;
+    src: url(../assets/fonts/fuente.zip);
+}
+
+body {
+    font-family: fuente;
+    font-size: 16px;
+}

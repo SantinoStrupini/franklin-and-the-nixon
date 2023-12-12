@@ -1,0 +1,21 @@
+.main-contacto{
+    background-color: #242629;
+    section{
+        .contenedor{
+            color: white;
+            display: grid;
+            grid-template-columns: 2fr;
+            gap: 2%;
+            justify-items: start;
+            padding: 20px;
+        }
+        div{
+            .formulario{
+                border: white;
+                border-radius:2px;
+                overflow: hidden;
+                padding: 5px;
+            }
+        }
+    }
+}

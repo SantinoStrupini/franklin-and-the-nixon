@@ -1,0 +1,34 @@
+main{
+    .carta-spotify{
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 8px;
+        box-shadow: 0 20px 10px #000000;
+        max-width: 320px;
+        background-color: #0000007f;
+    }
+    .card{
+        max-width: 300px;
+        border: 1px solid #124fa1;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px #000000;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #ffffff2a;
+        color: white;
+    }
+    .carta-youtube {
+        margin: 40px;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 8px;
+        box-shadow: 0 20px 10px #000000;
+        max-width: 400px;
+        background-color: #000000;
+        
+    
+    }
+}

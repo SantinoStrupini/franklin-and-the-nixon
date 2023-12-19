@@ -1,5 +1,5 @@
 .main-videos{
-    background-color: #242629;
+    background-color: nth($list: $colores, $n:3 );
     @include flex(row, space-between, center);
     
     
@@ -10,7 +10,7 @@
         height: 400px;
         }
         h2{
-            color: white;
+            color: nth($list: $colores, $n:2 );
         }
         
     }

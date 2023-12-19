@@ -1,5 +1,5 @@
 .main-sobrenosotros{
-    background-color: #242629;
+    background-color: nth($list: $colores, $n:3 );
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

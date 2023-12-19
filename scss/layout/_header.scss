@@ -1,7 +1,7 @@
 
 
 header{
-    background-color:#000000 ;
+    background-color:nth($list: $colores, $n:1 ) ;
     margin-bottom: 0px;
     .bg-body-tertiary {
         --bs-bg-opacity: 0;
@@ -16,23 +16,23 @@ header{
             }
             .menu{
                 flex-grow: 0;
-                background-color: #000000;
+                background-color: nth($list: $colores, $n:1 );
                 
             }
             
             .navbar-toggler{
-                background-color: white;
+                background-color: nth($list: $colores, $n:2 );
                 
             }
             div{
                 
                 .navbar-nav .nav-link.active{
-                    color: white;
+                    color: nth($list: $colores, $n:2 );
                 }
                 ul{
                     li{
                         .nav-link{
-                            color: white;
+                            color: nth($list: $colores, $n:2 );
                         }
                     }
                 }

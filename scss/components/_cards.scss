@@ -2,32 +2,32 @@ main{
     .carta-spotify{
         margin: 10px;
         padding: 10px;
-        border: 1px solid white;
+        border: 1px solid nth($list: $colores, $n:2 );
         border-radius: 8px;
-        box-shadow: 0 20px 10px #000000;
+        box-shadow: 0 20px 10px nth($list: $colores, $n:1 );
         max-width: 320px;
-        background-color: #0000007f;
+        background-color: nth($list: $colores, $n:3 );
     }
     .card{
         max-width: 300px;
-        border: 1px solid #124fa1;
+        border: 1px solid nth($list: $colores, $n:4 );
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 10px 20px #000000;
+        box-shadow: 0 10px 20px nth($list: $colores, $n:1 );
         margin-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color: #ffffff2a;
-        color: white;
+        background-color: nth($list: $colores, $n:8 );
+        color: nth($list: $colores, $n:2 );
     }
     .carta-youtube {
         margin: 40px;
         padding: 20px;
-        border: 1px solid white;
+        border: 1px solid nth($list: $colores, $n:2 );
         border-radius: 8px;
-        box-shadow: 0 20px 10px #000000;
+        box-shadow: 0 20px 10px nth($list: $colores, $n:1 );
         max-width: 400px;
-        background-color: #000000;
+        background-color: nth($list: $colores, $n:1 );
         
     
     }

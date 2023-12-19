@@ -1,8 +1,8 @@
 .main-contacto{
-    background-color: #242629;
+    background-color: nth($list: $colores, $n:3 ) ;
     section{
         .contenedor{
-            color: white;
+            color: nth($list: $colores, $n:2 );
             display: grid;
             grid-template-columns: 2fr;
             gap: 2%;
@@ -11,7 +11,7 @@
         }
         div{
             .formulario{
-                border: white;
+                border: nth($list: $colores, $n:2 );
                 border-radius:2px;
                 overflow: hidden;
                 padding: 5px;

@@ -64,8 +64,13 @@ header nav div div ul li .nav-link {
   width: 100%;
   height: auto;
 }
+.main-sobrenosotros div div h2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .main-sobrenosotros div div p {
-  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .main-videos {
@@ -86,6 +91,33 @@ header nav div div ul li .nav-link {
 
 .main-contacto {
   background-color: #242629;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-contacto div .logos-whatsapp {
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.main-contacto div .logos-gmail {
+  width: 60px;
+  margin-top: 20px;
+}
+.main-contacto div div .enlace-whatsapp {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.main-contacto div div .enlace-mail {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.main-contacto .google-maps {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 .main-contacto section .contenedor {
   color: white;
@@ -243,6 +275,14 @@ main .carta-youtube {
     justify-content: center;
   }
 }
+/*contacto*/
+@media screen and (max-width: 1024px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 /*index*/
 @media (max-width: 1024px) {
   main .carousel {
@@ -281,6 +321,17 @@ main .carta-youtube {
     display: grid;
     grid-template-columns: 3fr;
     justify-items: center;
+  }
+}
+/*contacto*/
+@media screen and (max-width: 768px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-contacto .google-maps {
+    display: none;
   }
 }
 /*footer*/

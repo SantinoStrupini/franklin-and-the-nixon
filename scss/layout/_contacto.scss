@@ -1,9 +1,49 @@
 .main-contacto{
     background-color: nth($list: $colores, $n:3 ) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    div{
+        .logos-whatsapp{
+            width: 30px;
+            
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+        .logos-gmail{
+            width: 60px;
+            
+            margin-top: 20px;
+            
+        }
+        
+        div{
+            .enlace-whatsapp{
+                margin-left: 20px;
+               
+                text-decoration: none;
+                color: nth($list: $colores, $n: 2 );
+            }
+            .enlace-mail{
+                margin-left: 20px;
+                text-decoration: none;
+                color: nth($list: $colores, $n: 2 );
+            }
+            
+        }
+    }
+    
+    .google-maps{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
     section{
         .contenedor{
             color: nth($list: $colores, $n:2 );
-            display: grid;
+            
+           display: grid;
             grid-template-columns: 2fr;
             gap: 2%;
             justify-items: start;

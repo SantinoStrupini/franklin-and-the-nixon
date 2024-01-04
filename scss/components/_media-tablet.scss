@@ -47,3 +47,14 @@
     
     
 }
+
+/*contacto*/
+@media screen and (max-width: 1024px) {
+    .main-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+}

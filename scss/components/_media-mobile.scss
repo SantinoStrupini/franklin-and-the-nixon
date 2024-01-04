@@ -53,6 +53,18 @@
 
 }
 
+/*contacto*/
+@media screen and (max-width: 768px) {
+    .main-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .google-maps{
+            display: none;
+        }
+    }
+}
+
 /*footer*/
 @media screen and (max-width: 400px) {
     .redes-icon4 {

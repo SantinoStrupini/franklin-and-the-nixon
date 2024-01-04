@@ -72,6 +72,9 @@ header nav div div ul li .nav-link {
   padding-right: 10px;
   padding-left: 10px;
 }
+.main-sobrenosotros div div p strong {
+  color: violet;
+}
 
 .main-videos {
   background-color: #242629;
